@@ -150,10 +150,10 @@ class ImageProcessor:
 
 if __name__ == '__main__':
     processor = ImageProcessor(image_path=IMAGE_PATH, colour_type="RGB")
-processor.convert_colour()
-processor.clip_image(10, 100)
+    processor.convert_colour()
+    processor.clip_image(10, 100)
 
-processor.show_image()
+    processor.show_image()
 # cv2: it changes the color scheme because the original bgr scheme kept the color of the original picture whereas rgb has replaced the colors
 # matplotlib: doesn't change the colors - it requires the rgb scheme to even run a picture plot -> rgb conversion keeps original colors
 ## ? ex0.py
