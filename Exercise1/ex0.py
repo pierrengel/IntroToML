@@ -95,7 +95,7 @@ class ImageProcessor:
         # ToDo: Also update the current colour scheme.
         # ToDo: Do not use any external libraries or loops.
         # Perform the colour conversion.
-         if self._colour_type == "RGB":
+        if self._colour_type == "RGB":
             self._image = self._image[:, :, ::-1]
             #inverting blue to red and red to blue
             self._colour_type = "BGR"
@@ -120,7 +120,7 @@ class ImageProcessor:
 
         self._image[self._image > clip_max] = clip_max
 
-
+#
     def flip_image(self, flip_value: int):
         """
         Flip an image either vertically (0), horizontally (1) or both ways (2).
